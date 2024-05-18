@@ -2,6 +2,7 @@ package smart.telefone;
 
 import java.util.Scanner;
 import smart.telefone.apps.Discador;
+import smart.telefone.apps.Navegador;
 import smart.telefone.apps.ReprodutorMusical;
 
 public class Telefone {
@@ -17,6 +18,7 @@ public class Telefone {
             System.out.println("O que deseja fazer?");
             System.out.println("1 - Reprodutor Musical");
             System.out.println("2 - Discador");
+            System.out.println("3 - Navegador");
             opcaoUser = scanner.nextInt();
             switch (opcaoUser) {
                 case 1: {
@@ -27,6 +29,11 @@ public class Telefone {
                 case 2: {
                     Discador app2 = new Discador();
                     app2.iniciarDiscador();
+                }
+                case 3: {
+                    Navegador app3 = new Navegador();
+                    app3.iniciarNavegador();
+                    break;
                 }
 
             }
